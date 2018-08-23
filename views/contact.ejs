@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <% include partials/nav.ejs %>
+  contact  
+
+  <form action="/contact" id="contact-form" method="POST">
+    <label for="name">Who do want to contact?</label>
+    <input type="text" name="name">  
+    <label for="departement">Which departement?</label>
+    <input type="text" name="departement">
+    <label for="email">Your email</label>
+    <input type="email" name="email">
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
